@@ -1,0 +1,25 @@
+{  
+   "applicationID":"226124914614532",
+   "accessToken":"EAADNqM814QQBAHZBkhxKA5GcCN0DagJaYCK2p2T5AOq87QPZCTDM8funmeJ5DaYSrTy8bcNc1d1kgBUH7ePyZBQZCovYFpyeTQ1wgIf2SYzsHARKSRUpLD1ftqAZAsZCvVTQSZCKdpeib91iqscamSFeTFY52L4IhMyDrKIZAlkCxAZDZD",
+   "appSecret":"10000ea0ff60fa4cb68220e4fa3549c5",
+   "verifyToken":"6e69021a-8e89-4ca0-88f0-58c4a1bad029",
+   "validated":false,
+   "connected":true,
+   "hostname":"botpresssample.herokuapp.com",
+   "ngrok":true,
+   "displayGetStarted":true,
+   "greetingMessage":"Default greeting message",
+   "persistentMenu":true,
+   "persistentMenuItems":[  
+
+   ],
+   "automaticallyMarkAsRead":true,
+   "trustedDomains":[  
+
+   
+   ],
+   "autoRespondGetStarted":true,
+   "autoResponse":"Hello!",
+   "error":null,
+   "homepage":"https://github.com/botpress/botpress-messenger"
+}

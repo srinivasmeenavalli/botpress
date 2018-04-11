@@ -7,6 +7,7 @@ module.exports = function(bp) {
     })
   })
   
+  
   bp.hear(/QR_(RED|GREEN|BLUE)_BUTTON/, (event, next) => {
     event.reply('#textWithQuickRepliesIcon_reply', { color: event.captured[0].toLowerCase() })
   })
