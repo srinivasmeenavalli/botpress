@@ -1,0 +1,23 @@
+message:
+  - text: {{message}}    
+    image_url: http://lanebryant.scene7.com/is/image/lanebryantProdATG/229103_0000012516?$large$&wid=490&hei=350
+    typing: true
+title:
+  - text: {{message}}
+    image_url: http://lanebryant.scene7.com/is/image/lanebryantProdATG/229103_0000012516?$large$&wid=490&hei=350
+    typing: true
+buttons0:
+  - text: {{message}}    
+    typing: true
+buttons1:
+  - text: {{message}}    
+    typing: true
+buttons2:
+  - text: {{message}}    
+    typing: true
+goodbye:
+  - text: Hope to see you back again soon!
+    typing: true
+thanks:
+  - text: Welcome
+    typing: true
