@@ -1,5 +1,9 @@
 module.exports = function(bp) {
-  bp.hear({}, (event, next) => {
+  bp.hear({
+    platform: 'facebook',
+    type: 'message',
+    text: 'hello world'
+  }, (event, next) => {
     event.reply('#textWithQuickRepliesIcon', {
       icon1: '${process.env.BOT_BASE_URL}/button_red.png',
       icon2: '${process.env.BOT_BASE_URL}/button_blue.png',
