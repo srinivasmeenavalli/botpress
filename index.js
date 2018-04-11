@@ -23,7 +23,8 @@ module.exports = function (bp) {
       var CircularJSON = require('circular-json');
       var jsonresp = CircularJSON.stringify(response);
 
-      bp.messenger.sendText(id, jsonresp);
+      //bp.messenger.sendText(id, jsonresp);
+      bp.messenger.sendTemplate(id, jsonresp);
     });
     request.on('error', function (error) {
       console.log(error);
