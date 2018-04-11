@@ -1,14 +1,26 @@
 module.exports = function(bp) {
-  bp.hear('MENU_SEND_EX_03', (event, next) => {
-    event.reply('#textWithQuickRepliesIcon', {
-      icon1: '${process.env.BOT_BASE_URL}/button_red.png',
-      icon2: '${process.env.BOT_BASE_URL}/button_blue.png',
-      icon3: '${process.env.BOT_BASE_URL}/button_green.png'
-    })
+  bp.middlewares.load()
+
+  //Catch 'hello world' from 'facebook'
+  bp.hear({
+    platform: 'facebook',
+    type: 'message',
+    text: 'hello world'
+  }, (event, next) => {
+    const id = event.user.id
+    const last_name = event.user.last_name
+    const first_name = event.user.first_name
+
+    const text = 'Congrats ' + first_name + " " + last_name + "! Your first chatbot using Botpress is now working."
+    bp.messenger.sendText(id, text)
   })
-  
-  
-  bp.hear(/QR_(RED|GREEN|BLUE)_BUTTON/, (event, next) => {
-    event.reply('#textWithQuickRepliesIcon_reply', { color: event.captured[0].toLowerCase() })
+
+  //Catch any 'message' from 'facebook'
+  bp.hear({
+    platform: 'facebook',
+    type: 'message',
+    text: /.+/i
+  }, (event, next) => {
+    bp.messenger.sendText(event.user.id, "Sorry, I only answer to 'hello world'...")
   })
 }
